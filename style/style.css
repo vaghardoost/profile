@@ -1,10 +1,17 @@
 @font-face {
-    font-family: appFont;
-    src: url("../src/Yekan.ttf");
+    font-family: 'Yekan';
+    src: url( '../src/Yekan.eot' );
+    src: url( '../src/Yekan.eot?#iefix' ) format( 'embedded-opentype' ),
+    url( '../src/Yekan.woff2' ) format( 'woff2' ),
+    url( '../src/Yekan.woff' ) format( 'woff' ),
+    url( '../src/Yekan.ttf' ) format( 'truetype' ),
+    url( '../src/Yekan.svg#Yekan' ) format( 'svg' );
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
-    font-family: appFont, serif;
+    font: 12pt/2 Yekan, sans-serif;
     /*font-size: small;*/
 }
 
@@ -46,6 +53,7 @@
 body {
     overflow: overlay;
     background-color: #F8F9FA;
+    font: 12pt/2 Yekan, sans-serif;
 }
 
 .shadow-text {
@@ -61,11 +69,12 @@ body {
     margin-bottom: 10px;
     padding: 10px;
     transition: 500ms;
-    height: 325px;
+    min-height: 350px;
 }
 
 .app-card:hover {
     background-color: #CED4DA;
+    font-size: small;
 }
 
 .app-card-img {
@@ -94,6 +103,7 @@ body {
     height: 100%;
     padding: 20px;
     transition: 500ms;
+    min-height: 200px;
 }
 
 .app-footer {
